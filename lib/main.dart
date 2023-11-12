@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hive TODO List',
+      title: 'TODO App',
       debugShowCheckedModeBanner: false,
       home: FutureBuilder(
         future: _todoService.getAllTodos(),

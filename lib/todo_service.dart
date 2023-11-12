@@ -26,4 +26,9 @@ class TodoService {
     item.isCompleted = !item.isCompleted;
     await box.putAt(index, item);
   }
+
+    Future<void> deleteAllTodos() async {
+    var box = await _box;
+    await box.clear();
+  }
 }
